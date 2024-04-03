@@ -1,14 +1,9 @@
-import React, {FC} from 'react';
+import React, { FC } from 'react';
 
-interface IProps {
-}
+interface IProps {}
 
 const Navbar: FC<IProps> = () => {
-  return (
-    <div>
-      Navbar
-    </div>
-  );
+  return <div>Navbar</div>;
 };
 
 export default Navbar;

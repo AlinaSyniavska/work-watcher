@@ -5,8 +5,8 @@ interface IProps {
 
 const Logo: FC<IProps> = () => {
   return (
-    <div>
-LOGO
+    <div className={'text-white text-2xl font-logo'}>
+      Efforts
     </div>
   );
 };

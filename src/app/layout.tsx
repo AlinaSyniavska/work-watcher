@@ -3,7 +3,6 @@ import { Inter as FontSans } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
 import './globals.css';
-import { Button } from '@/components/ui/button';
 import Sidebar from '@/components/Sidebar/Sidebar';
 
 const fontSans = FontSans({
@@ -31,7 +30,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen bg-background font-sans text-primary antialiased', fontSans.variable)}>
+      <body
+        className={cn(
+          'min-h-screen bg-background font-sans text-primary antialiased',
+          fontSans.variable,
+        )}
+      >
         <main className="flex h-screen items-center justify-between px-24 py-12">
           <div className="flex h-full w-full  bg-secondary-foreground text-sm shadow-xl">
             <Sidebar />
