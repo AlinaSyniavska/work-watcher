@@ -3,12 +3,12 @@ import React, {FC} from 'react';
 interface IProps {
 }
 
-const Navbar: FC<IProps> = () => {
+const Logo: FC<IProps> = () => {
   return (
     <div>
-      Navbar
+LOGO
     </div>
   );
 };
 
-export default Navbar;
+export default Logo;
