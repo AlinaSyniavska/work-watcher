@@ -3,6 +3,8 @@ import { Inter as FontSans } from 'next/font/google';
 import { cn } from '@/lib/utils';
 
 import './globals.css';
+import {Button} from "@/components/ui/button";
+import Navbar from "@/components/Navbar/Navbar";
 
 const fontSans = FontSans({
   subsets: ['latin'],
@@ -29,9 +31,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
-        {children}
-      </body>
+    <body className={cn('min-h-screen bg-background font-sans antialiased', fontSans.variable)}>
+
+    <main className="h-screen flex items-center justify-between px-24 py-12">
+      <div className="w-full h-full flex  text-sm bg-secondary-foreground shadow-xl">
+        <Navbar/>
+
+        <div className={'w-full'}>{children}</div>
+      </div>
+
+    </main>
+
+
+    </body>
     </html>
   );
 }
