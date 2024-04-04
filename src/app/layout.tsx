@@ -37,7 +37,14 @@ export default function RootLayout({
         )}
       >
         <main className="flex h-screen items-center justify-between px-24 py-12">
-          <div className="flex h-full w-full  bg-secondary-foreground text-sm shadow-xl">
+          <div className="flex h-full w-full  bg-secondary-foreground text-sm shadow-xl"
+               style={{
+                 // backgroundColor: 'rgba(255,255,255,0.25)',
+                 // boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+                 // backdropFilter: 'blur(1px)',
+                 // border: '1px solid rgba(255, 255, 255, 0.3)',
+                 }}
+          >
             <Sidebar />
 
             <div className={'w-full'}>{children}</div>
