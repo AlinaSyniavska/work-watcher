@@ -1,14 +1,17 @@
-import Image from "next/image";
-import {Button} from "@/components/ui/button";
+import Header from "@/components/Header/Header";
+import {headers} from "@/constants";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
+    <section className={''}>
+      <Header title={headers.dashboard}/>
 
-        {/*<Button>Button</Button>*/}
-      </div>
+      <main className={'p-5'}>
+        <div>Dashboard</div>
+      </main>
 
-    </main>
+
+
+    </section>
   );
 }
