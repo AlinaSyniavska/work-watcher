@@ -34,7 +34,7 @@ const DatePicker: FC<IProps> = () => {
           )}
         >
           <CalendarIcon className='mr-2 h-4 w-4' />
-          {date ? format(date, 'PPP') : <span>Pick a date</span>}
+          {date ? format(date, 'do MMMM\',\' yyyy') : <span>Pick a date</span>}
           <ChevronDown className='ml-4 h-4 w-4'/>
         </Button>
       </PopoverTrigger>
